@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>JavaScript Calculator</title>
+    
+    
+    
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css'>
+
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+      <div class="title blue">
+    <h2 class="titleTop">Javascript Calculator</h2>
+    <p class="titleBot">A FreeCodeCamp project</p>
+  </div>
+<div class="calc-body">
+        <div class="calc-frame z-depth-3">
+            <div class="tape">
+          <!-- going to put a running tape record here eventually -->
+          </div>
+            <div class="main-frame z-depth-2">
+                <div class="calc">
+                    <div class="calc-text">
+                  <input id="calc" type="text" class="calc-box" readonly>
+                  </div>
+
+                </div>
+                <div class="entry">
+                    <div class="entry-text">
+                    <input id="entry" type="text" class="entry-box" readonly>
+                  </div>
+
+                </div>
+                <div class="keypad-frame">
+ <!--                   <div class="util">
+                        <div class="col col-1">
+                            <div class="key-box"></div>
+                            <div class="key-box"></div>
+                            <div class="key-box"></div>
+                            <div class="key-box"></div>
+                        </div>
+                    </div>
+-->
+                    <div class="main blue lighten-1">
+                        <div class="rowz row-1 blue darken-1">
+                            <div class="key-box hoverable">
+                                <span class="key" id="ce-key">CE</span>
+                            </div>
+                            <div class="key-box hoverable">
+                                <span class="key" id="c-key">C</span>
+                            </div>
+                            <div class="key-box hoverable">
+                                <i class="key material-icons" id="bs-key">backspace</i>
+                            </div>
+                            <div class="key-box hoverable">
+                                <span class="key" id="div-key">&#xF7;</span>
+                            </div>
+                        </div>
+                        <div class="rowz row-2">
+                            <div class="key-box hoverable">
+                                <span class="key" id="7-key">7</span>
+                            </div>
+                            <div class="key-box hoverable">
+                                <span class="key" id="8-key">8</span>
+                            </div>
+                            <div class="key-box hoverable">
+                                <span class="key" id="9-key">9</span>
+                            </div>
+                            <div class="key-box hoverable blue darken-1">
+                                <span class="key" id="mult-key">X</span>
+                            </div>
+                        </div>
+                        <div class="rowz row-3">
+                            <div class="key-box hoverable">
+                                <span class="key" id="4-key">4</span>
+                            </div>
+                            <div class="key-box hoverable">
+                                <span class="key" id="5-key">5</span>
+                            </div>
+                            <div class="key-box hoverable">
+                                <span class="key" id="6-key">6</span>
+                            </div>
+                            <div class="key-box hoverable blue darken-1">
+                                <span class="key" id="minus-key">-</span>
+                            </div>
+                        </div>
+                        <div class="rowz row-4">
+                            <div class="key-box hoverable">
+                                <span class="key" id="1-key">1</span>
+                            </div>
+                            <div class="key-box hoverable">
+                                <span class="key" id="2-key">2</span>
+                            </div>
+                            <div class="key-box hoverable">
+                                <span class="key" id="3-key">3</span>
+                            </div>
+                            <div class="key-box hoverable blue darken-1">
+                                <span class="key" id="plus-key">+</span>
+                            </div>
+                        </div>
+                        <div class="rowz row-5">
+                            <div class="key-box hoverable">
+                                <span class="key" id="plusmn-key">&#xB1;</span>
+                            </div>
+                            <div class="key-box hoverable">
+                                <span class="key" id="0-key">0</span>
+                            </div>
+                            <div class="key-box hoverable">
+                                <span class="key" id="dec-key">.</span>
+                            </div>
+                            <div class="key-box hoverable blue darken-1">
+                                <span class="key" id="equal-key">=</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<footer class="page-footer blue">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">by RMensing</h5>
+                <p class="grey-text text-darken-4"><span class="bylinks">
+        |<a href="http://www.freecodecamp.com/rmensing" target="_blank" class="blue-text text-darken-4">FreeCodeCamp</a>
+        |<a href="http://codepen.io/rmensing/" target="_blank" class="blue-text text-darken-4">CodePen</a>
+        |<a href="https://github.com/rmensing" target="_blank" class="blue-text text-darken-4">GitHub</a>
+        |<a href="https://www.linkedin.com/in/robert-mensing-9135bb1b" target="_blank" class="blue-text text-darken-4">LinkdIn</a>
+        |<a href="mailto://rmensing@gmail.com/" target="_blank" class="blue-text text-darken-4">Email</a>|</span>
+    </span></p>
+              </div>
+              
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            Copyright © 2016 Robert Mensing
+            </div>
+          </div>
+        </footer>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/bignumber.js/2.3.0/bignumber.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>

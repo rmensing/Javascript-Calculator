@@ -1,0 +1,96 @@
+@import url(https://fonts.googleapis.com/css?family=Oxygen+Mono);
+@import
+url(https://fonts.googleapis.com/icon?family=Material+Icons);
+body{
+  background: url(http://i370.photobucket.com/albums/oo145/okamido/bg.png) left top repeat;
+}
+.title {
+  width: 100% auto;
+  padding-bottom: 40px;
+  text-align: center;
+}
+.titleBot{
+  margin: 0px
+}
+.titleTop{
+  margin: 0px;
+}
+input[type="text"]
+{
+   text-align:right;
+  font-size: 32px;
+  /*border: 1px solid red;*/
+  width: 258px;
+}
+.calc-body{
+    font-family: 'Oxygen Mono',Monospace ;
+  font-size: 48px;
+    display: -webkit-flex; /* Safari */
+  display: flex;
+
+}
+.calc-frame{
+      display: -webkit-flex; /* Safari */
+  display: flex;
+    border: 2px solid black;
+  margin: 10px auto 0 auto;
+  border-radius: 5px;
+}
+.rowz{
+      display: -webkit-flex; /* Safari */
+  display: flex;
+  text-align: center;
+}
+.key-box{
+  height: 65px;
+  width: 65px;
+  cursor: pointer;
+}
+.main-frame{
+  border-left: 8px solid #42a5f5;
+  border-right: 8px solid #42a5f5;
+  border-bottom: 8px solid #42a5f5;
+  border-top: 4px solid #42a5f5;
+}
+.tape{
+  background-color: #EEEEEE;
+  /*width: 285px;*/
+}
+.calc{
+  border-bottom: 1px solid grey;
+  background-color: #EEEEEE;
+
+}
+.calc-text{
+  height: 65px;
+}
+.entry{
+  background-color: #EEEEEE;
+}
+.entry-text{
+  height: 65px;
+}
+.keypad-frame{
+  display: -webkit-flex; /* Safari */
+  display: flex;
+      -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.util{
+  display: -webkit-flex; /* Safari */
+  display: flex;
+   -webkit-flex-direction: column; /* Safari */
+  flex-direction:         column;
+}
+
+
+.clicked {
+    transition: box-shadow .25s;
+  transition: outline .25s;
+    box-shadow: 0;
+    outline: 3px solid inset;
+}
